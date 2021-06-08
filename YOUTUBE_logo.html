@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style >
+		body{
+			background-color: white;
+			transition: background-color 0.1s ease-in 2.77s;
+		}
+		body:hover{
+			background-color: black;
+		}
+
+
+		.red{
+			z-index: 0;
+			margin: 200px auto;
+			background-color: red;
+			width:500px;
+			height: 260px;
+			border-radius: 20px ;
+
+		}
+		.white{
+			position: absolute;
+			z-index: 1;
+			right: 45.3%;		
+			top: 34.5%;
+			background-color: white;
+			height: 0;
+			width: 0;
+			border-left: 100px solid white;
+			border-top: 50px solid red;
+			border-bottom: 50px solid red;
+			animation-name: bigass;
+			animation-duration: 1s;
+			animation-delay: 2s;
+			animation-timing-function: ;
+			}
+		@keyframes bigass{
+			0%{
+				border-left: 100px solid white;
+				border-top: 50px solid red;
+				border-bottom: 50px solid red;
+			}
+			80%{
+				border-left: 150px solid white;
+				border-top: 80px solid red;
+				border-bottom: 80px solid red;
+				right: 43.3%;
+				top: 31.5%;
+			}
+			
+			100%{
+				border-left: 100px solid black;
+				border-top: 50px solid red;
+				border-bottom: 50px solid red;
+
+			}
+		}
+		.curve1{
+			z-index: 0;
+			position: absolute;
+			right: 35%;		
+			top: 22.4%;
+			background-color: red;
+			width:480px;
+			height: 40px;
+			border-radius: 50%;
+		}
+		.curve2{
+			z-index: 0;
+			position: absolute;
+			right: 35%;		
+			bottom: 42.4%;
+			background-color: red;
+			width:480px;
+			height: 40px;
+			border-radius: 50%;
+		}
+		.curveL{
+			z-index: 0;
+			position: absolute;
+			right: 33.7%;		
+			bottom: 45.6%;
+			background-color: red;
+			width:30px;
+			height: 240px;
+			border-radius: 50%;
+		}
+		.curveR{
+			z-index: 0;
+			position: absolute;
+			left: 33.7%;		
+			bottom: 45.6%;
+			background-color: red;
+			width:30px;
+			height: 240px;
+			border-radius: 50%;
+		}
+
+	</style>
+
+</head>
+<body>
+		<div class="logo">
+			<div class="red"></div>
+			<div class="white"></div>
+			<div class="curve1"></div>
+			<div class="curve2"></div>
+			<div class="curveL"></div>
+			<div class="curveR"></div>
+		</div>
+
+</body>
+</html>
